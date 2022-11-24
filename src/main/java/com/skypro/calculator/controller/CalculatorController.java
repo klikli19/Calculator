@@ -24,11 +24,11 @@ public class CalculatorController {
     }
     @GetMapping("/plus")
     public String plus (@RequestParam("num1") Integer a, @RequestParam("num2") Integer b) {
-        return String.format("%d * %d = %d", a, b, this.calculatorService.plus(a, b));
+        return String.format("%d + %d = %d", a, b, this.calculatorService.plus(a, b));
     }
     @GetMapping("/minus")
     public String minus (@RequestParam("num1") Integer a, @RequestParam("num2") Integer b) {
-        return String.format("%d * %d = %d", a, b, this.calculatorService.minus(a, b));
+        return String.format("%d - %d = %d", a, b, this.calculatorService.minus(a, b));
     }
     @GetMapping("/multiply")
     public String multiply (@RequestParam("num1") Integer a, @RequestParam("num2") Integer b)  {
